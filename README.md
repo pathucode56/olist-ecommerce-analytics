@@ -7,6 +7,11 @@ This project analyzes the Brazilian E-Commerce Public Dataset by Olist to unders
 The analysis is transformed into an interactive dashboard that allows users to explore the business data using dynamic filters and visualizations.
 
 ---
+##  Live Dashboard
+
+**[Open Live Dashboard](https://olist-ecommerce-analytics.onrender.com)**
+
+The dashboard is deployed using Render and built with Streamlit.
 
 ##  Project Overview
 
