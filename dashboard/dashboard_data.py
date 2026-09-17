@@ -1,14 +1,15 @@
 import pandas as pd
 import numpy as np
 
-
-
 # LOAD DATA
 
 from pathlib import Path
+import kagglehub
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = BASE_DIR / "data"
+# Download/cache Olist dataset
+DATA_DIR = Path(
+    kagglehub.dataset_download("olistbr/brazilian-ecommerce")
+)
 
 customers = pd.read_csv(DATA_DIR / "olist_customers_dataset.csv")
 orders = pd.read_csv(DATA_DIR / "olist_orders_dataset.csv")
